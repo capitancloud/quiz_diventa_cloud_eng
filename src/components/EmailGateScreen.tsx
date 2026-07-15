@@ -158,8 +158,8 @@ export default function EmailGateScreen({ tags, onSubmit }: Props) {
         </div>
 
         {/* Trust signal */}
-        <p className="text-center text-slate-600 text-xs mt-4">
-          🔒 I tuoi dati sono al sicuro. Nessuno spam, mai.
+        <p className="text-center text-slate-600 text-xs mt-4 leading-relaxed max-w-sm mx-auto">
+          🔒 Inserendo i tuoi dati autorizzi Capitan Cloud a inviarti contenuti formativi e offerte riservate. Nessuno spam — puoi disiscriverti in qualsiasi momento.
         </p>
       </div>
     </div>
