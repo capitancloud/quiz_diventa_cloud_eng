@@ -53,7 +53,7 @@ export default function ResultScreen({ name, tags }: Props) {
   const profileTitle = getProfileTitle(tags);
 
   const ctaUrl = (() => {
-    const base = (import.meta.env.VITE_CTA_URL as string | undefined) ?? 'https://capitancloud.it/percorso-90gg';
+    const base = (import.meta.env.VITE_CTA_URL as string | undefined) ?? 'https://capitancloud.it';
     return `${base}?profile=${tags.join('_')}`;
   })();
 
