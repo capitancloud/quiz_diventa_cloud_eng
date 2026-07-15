@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <title>Netlify Forms Detection</title>
+</head>
+<body>
+  <!--
+    This file is required so Netlify's build-time crawler can detect
+    the "quiz-lead" form even though it is rendered dynamically via React.
+    Do NOT delete this file.
+  -->
+  <form name="quiz-lead" data-netlify="true" netlify-honeypot="bot-field" hidden>
+    <input type="hidden" name="form-name" value="quiz-lead" />
+    <input type="text" name="bot-field" />
+    <input type="text" name="name" />
+    <input type="email" name="email" />
+    <input type="hidden" name="tags" />
+  </form>
+</body>
+</html>
