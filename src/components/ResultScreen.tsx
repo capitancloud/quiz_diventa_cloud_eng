@@ -52,10 +52,7 @@ export default function ResultScreen({ name, tags }: Props) {
   const insights = getTopInsights(tags, 2);
   const profileTitle = getProfileTitle(tags);
 
-  const ctaUrl = (() => {
-    const base = (import.meta.env.VITE_CTA_URL as string | undefined) ?? 'https://capitancloud.it';
-    return `${base}?profile=${tags.join('_')}`;
-  })();
+  const ctaUrl = (import.meta.env.VITE_CTA_URL as string | undefined) ?? 'https://capitancloud.it';
 
   useEffect(() => {
     const t = setTimeout(() => setVisible(true), 60);
