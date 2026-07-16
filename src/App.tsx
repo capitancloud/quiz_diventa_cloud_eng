@@ -80,9 +80,19 @@ export default function App() {
 
   function handleConsent(stored: StoredConsent) {
     setConsent(stored);
-    // Here you can conditionally load analytics/pixels based on stored.preferences
-    // e.g. if (stored.preferences.analytics) { initGA(); }
-    // e.g. if (stored.preferences.marketing) { initMetaPixel(); }
+
+    const analyticsGranted = stored.preferences.analytics ? 'granted' : 'denied';
+    const marketingGranted = stored.preferences.marketing ? 'granted' : 'denied';
+
+    // Update Google Consent Mode v2
+    if (typeof window.gtag === 'function') {
+      window.gtag('consent', 'update', {
+        analytics_storage:  analyticsGranted,
+        ad_storage:         marketingGranted,
+        ad_user_data:       marketingGranted,
+        ad_personalization: marketingGranted,
+      });
+    }
   }
 
   function handleRevoke() {
