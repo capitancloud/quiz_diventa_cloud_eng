@@ -3,12 +3,13 @@ import { submitLead } from '../lib/submitLead';
 
 interface Props {
   tags: string[];
+  source: string;
   onSubmit: (name: string, email: string) => void;
 }
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-export default function EmailGateScreen({ tags, onSubmit }: Props) {
+export default function EmailGateScreen({ tags, source, onSubmit }: Props) {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [errors, setErrors] = useState<{ name?: string; email?: string }>({});
@@ -41,7 +42,7 @@ export default function EmailGateScreen({ tags, onSubmit }: Props) {
     setErrors({});
     setLoading(true);
     try {
-      await submitLead({ name: name.trim(), email: email.trim(), tags });
+      await submitLead({ name: name.trim(), email: email.trim(), tags, source });
       sessionStorage.setItem('cc_tags', JSON.stringify(tags));
       sessionStorage.setItem('cc_name', name.trim());
     } catch {

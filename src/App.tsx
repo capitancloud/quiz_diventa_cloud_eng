@@ -1,4 +1,4 @@
-import { useReducer } from 'react';
+import { useReducer, useState } from 'react';
 import { questions } from './data/questions';
 import LandingScreen from './components/LandingScreen';
 import QuizScreen from './components/QuizScreen';
@@ -65,6 +65,9 @@ const initialState: State = {
 
 export default function App() {
   const [state, dispatch] = useReducer(reducer, initialState);
+  const [source] = useState<string>(
+    () => new URLSearchParams(window.location.search).get('utm_source') ?? 'diretto'
+  );
 
   if (state.screen === 'landing') {
     return <LandingScreen onStart={() => dispatch({ type: 'START' })} />;
@@ -89,6 +92,7 @@ export default function App() {
     return (
       <EmailGateScreen
         tags={state.tags}
+        source={source}
         onSubmit={(name, email) =>
           dispatch({ type: 'SUBMIT_EMAIL', name, email })
         }
