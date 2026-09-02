@@ -53,17 +53,21 @@ export default function LandingScreen({ onStart }: Props) {
         </div>
 
         {/* Headline */}
-        <h1 className="text-center text-3xl sm:text-4xl font-extrabold leading-snug mb-3">
-          <span className="text-white">Bloccato in un lavoro da dipendente che non ti soddisfa più?</span>
-          <br />
-          <span className="text-white">Scopri in 2 minuti se il </span>
-          <span className="text-[#DDA808]">Cloud Engineer</span>
-          <span className="text-white"> può essere la svolta che stai cercando (anche partendo da zero).</span>
-        </h1>
-
-        <p className="text-center text-slate-400 text-sm sm:text-base leading-relaxed mb-6 max-w-md mx-auto">
-          Rispondi a <strong className="text-white">9 domande</strong> e scopri se questo percorso è giusto per te — meno di 2 minuti, promesso!
-        </p>
+        <div className="text-center mb-6 space-y-3">
+          <p className="text-slate-400 text-base sm:text-lg font-semibold tracking-wide uppercase">
+            Bloccato in un lavoro che non ti soddisfa più?
+          </p>
+          <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight">
+            <span className="text-white">Scopri se il </span>
+            <span className="text-[#DDA808]">Cloud Engineer</span>
+            <span className="text-white"> può essere</span>
+            <br />
+            <span className="text-white">la tua svolta</span>
+          </h1>
+          <p className="text-slate-400 text-sm sm:text-base leading-relaxed max-w-sm mx-auto">
+            Rispondi a <strong className="text-white">9 domande</strong> — meno di 2 minuti — e scopri se questo percorso fa per te, anche partendo da zero.
+          </p>
+        </div>
 
         {/* Social proof bullets */}
         <div className="mb-6 flex flex-col gap-3">
