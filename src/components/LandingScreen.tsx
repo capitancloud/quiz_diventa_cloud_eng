@@ -87,13 +87,22 @@ export default function LandingScreen({ onStart }: Props) {
           ✅ 100.000+ persone formate · Nessun account richiesto
         </p>
 
-        {/* CTA button */}
+        {/* CTA buttons */}
         <button
           onClick={onStart}
           className="w-full py-4 px-6 rounded-2xl text-[#0A0A0A] text-lg font-bold bg-[#F5B500] hover:bg-[#E0A800] active:bg-[#C99700] active:scale-[0.98] transition-all duration-150 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#F5B500] focus-visible:ring-offset-2 focus-visible:ring-offset-[#080B14]"
         >
-          Scopri se è il percorso giusto per te →
+          Fai il quiz e scopri se è il percorso per te →
         </button>
+
+        <a
+          href="https://capitancloud.it/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="mt-3 w-full py-3 px-6 rounded-2xl text-slate-300 text-sm font-semibold border border-white/20 hover:bg-white/[0.06] active:bg-white/10 active:scale-[0.98] transition-all duration-150 text-center block focus:outline-none focus-visible:ring-2 focus-visible:ring-white/30 focus-visible:ring-offset-2 focus-visible:ring-offset-[#080B14]"
+        >
+          Scopri subito il percorso senza fare il quiz
+        </a>
       </div>
     </div>
   );
