@@ -141,6 +141,20 @@ export default function ResultScreen({ name, tags }: Props) {
           </div>
         )}
 
+        {/* Video */}
+        <div className="mb-6">
+          <p className="text-slate-500 text-xs uppercase tracking-wider font-semibold px-1 mb-3">Guarda questo video</p>
+          <div className="relative w-full rounded-2xl overflow-hidden border border-white/[0.08]" style={{ paddingBottom: '56.25%' }}>
+            <iframe
+              className="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/ZbbZipKAbZA"
+              title="Capitan Cloud – Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </div>
+
         {/* CTA */}
         <a
           href={ctaUrl}
