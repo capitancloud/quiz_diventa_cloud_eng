@@ -81,19 +81,6 @@ export default function ResultScreen({ name, tags }: Props) {
           visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-5'
         }`}
       >
-        {/* Video */}
-        <div className="mb-6">
-          <div className="relative w-full rounded-2xl overflow-hidden border border-white/[0.08]" style={{ paddingBottom: '56.25%' }}>
-            <iframe
-              className="absolute inset-0 w-full h-full"
-              src="https://www.youtube.com/embed/ZbbZipKAbZA"
-              title="Capitan Cloud – Video"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
-        </div>
-
         {/* Success badge */}
         <div className="flex justify-center mb-5">
           <div className="w-16 h-16 rounded-2xl bg-[#0073E6] flex items-center justify-center">
@@ -108,6 +95,19 @@ export default function ResultScreen({ name, tags }: Props) {
           Il tuo profilo, <span className="text-[#DDA808]">{name}</span>
         </h2>
         <p className="text-center text-slate-400 text-sm mb-6">Analisi basata sulle tue risposte</p>
+
+        {/* Video */}
+        <div className="mb-6">
+          <div className="relative w-full rounded-2xl overflow-hidden border border-white/[0.08]" style={{ paddingBottom: '56.25%' }}>
+            <iframe
+              className="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/ZbbZipKAbZA"
+              title="Capitan Cloud – Video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+        </div>
 
         {/* Profile card */}
         <div className="rounded-2xl border border-[#0073E6]/25 bg-[#0D1117] p-6 mb-5">
