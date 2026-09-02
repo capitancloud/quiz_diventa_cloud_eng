@@ -58,11 +58,9 @@ export default function LandingScreen({ onStart }: Props) {
             Bloccato in un lavoro che non ti soddisfa più?
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight">
-            <span className="text-white">Scopri se il </span>
+            <span className="text-white">Scopri se Diventare un </span>
             <span className="text-[#DDA808]">Cloud Engineer</span>
-            <span className="text-white"> può essere</span>
-            <br />
-            <span className="text-white">la tua svolta</span>
+            <span className="text-white"> può essere la tua svolta</span>
           </h1>
           <p className="text-slate-400 text-sm sm:text-base leading-relaxed max-w-sm mx-auto">
             Rispondi a <strong className="text-white">9 domande</strong> — meno di 2 minuti — e scopri se questo percorso fa per te, anche partendo da zero.
