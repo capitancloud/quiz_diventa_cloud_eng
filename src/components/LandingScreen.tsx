@@ -54,9 +54,11 @@ export default function LandingScreen({ onStart }: Props) {
 
         {/* Headline */}
         <h1 className="text-center text-3xl sm:text-4xl font-extrabold leading-snug mb-3">
-          <span className="text-white">Scopri se la carriera da </span>
+          <span className="text-white">Bloccato in un lavoro da dipendente che non ti soddisfa più?</span>
+          <br />
+          <span className="text-white">Scopri in 2 minuti se il </span>
           <span className="text-[#DDA808]">Cloud Engineer</span>
-          <span className="text-white"> fa per te (anche partendo da zero)</span>
+          <span className="text-white"> può essere la svolta che stai cercando (anche partendo da zero).</span>
         </h1>
 
         <p className="text-center text-slate-400 text-sm sm:text-base leading-relaxed mb-6 max-w-md mx-auto">
