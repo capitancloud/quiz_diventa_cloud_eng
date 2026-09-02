@@ -99,9 +99,9 @@ export default function LandingScreen({ onStart }: Props) {
           href="https://capitancloud.it/"
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-3 w-full py-3 px-6 rounded-2xl text-slate-300 text-sm font-semibold border border-white/20 hover:bg-white/[0.06] active:bg-white/10 active:scale-[0.98] transition-all duration-150 text-center block focus:outline-none focus-visible:ring-2 focus-visible:ring-white/30 focus-visible:ring-offset-2 focus-visible:ring-offset-[#080B14]"
+          className="mt-3 w-full py-4 px-6 rounded-2xl text-white text-base font-bold border-2 border-[#0073E6] hover:bg-[#0073E6]/20 active:bg-[#0073E6]/30 active:scale-[0.98] transition-all duration-150 text-center block focus:outline-none focus-visible:ring-2 focus-visible:ring-[#0073E6] focus-visible:ring-offset-2 focus-visible:ring-offset-[#080B14]"
         >
-          Scopri subito il percorso senza fare il quiz
+          Scopri subito il percorso senza fare il quiz →
         </a>
       </div>
     </div>
